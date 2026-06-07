@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maruf Islam | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">MI<span>.QA</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" onclick="toggleDarkMode()">🌙 Night Mode</button>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Assalamuwalikum, I'm <br><span class="name">Md. Maruf Islam</span></h1>
+            <p class="subtitle">Aspiring QA Engineer</p>
+            <p class="tagline"><i>"Building robust software through precision, testing, and clean code."</i></p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="window.location.href='#contact'">Hire Me</button>
+                <button class="btn btn-secondary" onclick="window.location.href='#projects'">View My Work</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="about" class="card">
+            <h2><i class="fa-solid fa-user"></i> About Me</h2>
+            <p>I am a 6th Semester CSE student passionate about Software Testing and QA. I focus on creating bug-free, user-centric software systems and ensuring product quality through rigorous testing methodologies.</p>
+        </section>
+
+        <section id="skills" class="card">
+            <h2><i class="fa-solid fa-code"></i> Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">C / C++</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Manual Testing</span>
+                <span class="skill-tag">Automation Testing</span>
+                <span class="skill-tag">Quality Assurance</span>
+            </div>
+        </section>
+
+        <section id="education" class="card">
+            <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+            <div class="education-info">
+                <h3>6th Semester, CSE Department</h3>
+                <p class="meta-text">Section: F | Student ID: 232311239</p>
+            </div>
+        </section>
+
+        <section id="projects" class="card">
+            <h2><i class="fa-solid fa-laptop-code"></i> Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <h3>Personal Finance Mobile App</h3>
+                    <p>Software Engineering Project focused on budget tracking and UX.</p>
+                </div>
+                <div class="project-item">
+                    <h3>FFT-Based Video Frame Analyzer</h3>
+                    <p>Advanced analysis tool utilizing Fast Fourier Transform.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Student Result Management System</h3>
+                    <p>A robust system backend with optimized database queries.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Portfolio Website (QA Verified)</h3>
+                    <p>Personally tested and optimized for cross-browser compatibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="card">
+            <h2><i class="fa-solid fa-briefcase"></i> Services</h2>
+            <div class="services-grid">
+                <div class="service-item">Web Development</div>
+                <div class="service-item">SQA Testing</div>
+                <div class="service-item">Bug Reporting</div>
+                <div class="service-item">Database Optimization</div>
+            </div>
+        </section>
+
+        <section id="contact" class="card contact-section">
+            <h2><i class="fa-solid fa-envelope"></i> Contact Me</h2>
+            <p class="contact-desc">Let's collaborate on your next project or QA assignment!</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> 01773532803</p>
+                    <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> <a href="mailto:marufislam111150@gmail.com">marufislam111150@gmail.com</a></p>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/marufislam111150" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/maruf-islam-008781318" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Message sent successfully. (Mockup)');">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Md. Maruf Islam | All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
